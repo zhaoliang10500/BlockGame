@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="470.0" prefWidth="620.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.mcgill.ecse223.block.view.gameSettings.GameSettingsController">
+	<children>
+				<AnchorPane prefHeight="360.0" prefWidth="400.0" style="-fx-background-color: white; -fx-background-radius: 1em;" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <VBox prefHeight="400.0" prefWidth="570.0" spacing="30.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+               <children>
+                  <Label prefHeight="53.0" prefWidth="203.0" text="Game Settings">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="name" labelFloat="true" promptText="Name of Game">
+                     <font>
+                        <Font size="14.0" />
+                     </font></JFXTextField>
+                  <HBox spacing="46.0">
+                     <children>
+                        <JFXTextField fx:id="nrOfLevels" labelFloat="true" promptText="Number of Levels">
+                           <font>
+                              <Font size="14.0" />
+                           </font></JFXTextField>
+                        <JFXTextField fx:id="blocksPerLevel" labelFloat="true" promptText="Blocks Per Level">
+                           <font>
+                              <Font size="14.0" />
+                           </font></JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox spacing="45.0">
+                     <children>
+                        <VBox spacing="40.0">
+                           <children>
+                              <JFXTextField fx:id="minLength" labelFloat="true" promptText="Min Length">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></JFXTextField>
+                              <JFXTextField fx:id="maxLength" labelFloat="true" promptText="Max Length">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></JFXTextField>
+                           </children>
+                           <padding>
+                              <Insets top="20.0" />
+                           </padding>
+                        </VBox>
+                        <VBox spacing="25.0">
+                           <children>
+                              <JFXTextField fx:id="minHorizontalSpeed" labelFloat="true" promptText="Min Horizontal Speed">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></JFXTextField>
+                              <JFXTextField fx:id="minVerticalSpeed" labelFloat="true" promptText="Min Vertical Speed">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></JFXTextField>
+                              <JFXTextField fx:id="speedIncreaseFactor" labelFloat="true" promptText="Speed Increase Factor">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></JFXTextField>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+				</AnchorPane>
+				<AnchorPane prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); -fx-background-radius: 1em;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+					<children>
+						<VBox fillWidth="false" layoutX="76.0" layoutY="84.0" prefHeight="450.0" prefWidth="200.0" style="-fx-background-radius: 1em;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+							<children>
+								<Label text="Block223" textFill="WHITE">
+									<font>
+										<Font size="16.0" />
+									</font>
+								</Label>
+								<Label text="Breakout" textFill="WHITE">
+									<font>
+										<Font size="44.0" />
+									</font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+								</Label>
+                  <VBox alignment="TOP_CENTER" prefWidth="180.0" spacing="20.0">
+                     <children>
+                        <JFXButton buttonType="RAISED" onAction="#nextOnClick" prefHeight="40.0" prefWidth="140.0" ripplerFill="WHITE" style="-fx-background-color: orange; -fx-background-radius: 1em;" text="Next Page">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" onAction="#setDefaultValuesOnClick" prefHeight="40.0" prefWidth="140.0" ripplerFill="WHITE" style="-fx-background-color: orange; -fx-background-radius: 1em;" text="Set Default Values">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" onAction="#saveAndExitOnClick" prefHeight="40.0" prefWidth="140.0" ripplerFill="WHITE" style="-fx-background-color: orange; -fx-background-radius: 1em;" text="Save and Exit">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" onAction="#cancelOnClick" prefHeight="40.0" prefWidth="140.0" ripplerFill="WHITE" style="-fx-background-color: orange; -fx-background-radius: 1em;" text="Cancel">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                     </children></VBox>
+							</children>
+               <padding>
+                  <Insets left="10.0" top="10.0" />
+               </padding>
+						</VBox>
+            <JFXButton fx:id="close" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="165.0" layoutY="7.0" maxWidth="28.0" minWidth="28.0" onAction="#closeApp" prefWidth="28.0">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../img/cancel.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="logout" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="130.0" layoutY="7.0" maxWidth="28.0" minWidth="28.0" onAction="#logoutOnClick" prefWidth="28.0">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                     <image>
+                        <Image url="@../../../../../../../img/logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+					</children>
+         <effect>
+            <DropShadow />
+         </effect>
+				</AnchorPane>
+	</children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</AnchorPane>

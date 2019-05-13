@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.svg.*?>
+<?import com.jfoenix.validation.*?>
+<?import com.jfoenix.controls.*?>
+<?import com.jfoenix.controls.cells.editors.base.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" style="-fx-background-image: url('/Users/zhaoliang/Downloads/images.jpeg');" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="36.0" layoutY="620.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="60.0" text="Back" />
+      <Button layoutX="304.0" layoutY="620.0" mnemonicParsing="false" style="-fx-background-color: red;" text="Cancel" />
+      <Button layoutX="559.0" layoutY="620.0" mnemonicParsing="false" text="Button" />
+      <JFXToolbar layoutX="50.0" layoutY="124.0" />
+      <TextField layoutX="35.0" layoutY="165.0" prefHeight="27.0" prefWidth="364.0" text="Blocks Per Level:" />
+      <TextField layoutX="36.0" layoutY="214.0" prefHeight="27.0" prefWidth="364.0" text="Width Play Area:" />
+      <TextField layoutX="35.0" layoutY="264.0" prefHeight="27.0" prefWidth="364.0" text="Height Play Area:" />
+      <TextField layoutX="334.0" layoutY="488.0" prefHeight="27.0" prefWidth="244.0" text="Miminum Vertical Speed:" />
+      <TextField layoutX="334.0" layoutY="448.0" prefHeight="27.0" prefWidth="244.0" text="Miminum Horizontal Speed:" />
+      <TextField layoutX="36.0" layoutY="315.0" prefHeight="27.0" prefWidth="364.0" text="Name:" />
+      <TextField layoutX="35.0" layoutY="448.0" prefHeight="27.0" prefWidth="213.0" text="Maximum Length:" />
+      <TextField layoutX="36.0" layoutY="488.0" prefHeight="27.0" prefWidth="213.0" text="Minimum Length:" />
+      <TextField layoutX="334.0" layoutY="524.0" prefHeight="27.0" prefWidth="244.0" text="Speed Increase Factor:" />
+      <Label layoutX="233.0" layoutY="46.0" prefHeight="53.0" prefWidth="203.0" text="Game Setting">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="402.0" text="Paddle">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="339.0" layoutY="402.0" text="Ball">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#21ff3014" height="200.0" layoutX="24.0" layoutY="388.0" stroke="BLACK" strokeType="INSIDE" width="292.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2197ff0b" height="200.0" layoutX="314.0" layoutY="388.0" stroke="BLACK" strokeType="INSIDE" width="292.0" />
+   </children>
+</Pane>
